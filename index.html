@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="script.js"></script>
+    <style>
+        
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #a0a0bb;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+       
+        #colorSelect,#colorSelected {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #000000;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+       
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007bff;
+           
+            border-radius: 5px;
+            cursor: pointer;
+          
+        }
+
+      
+    </style>
+    
+</head>
+<body>
+    <h3>Choose a Color</h3>
+    <select id="colorSelect">
+        <option style="color: red;">red</option>
+        <option>green</option>
+        <option>white</option>
+        <option>black</option>
+    </select>
+    <button onclick="removeSelected()">Remove Selected</button>
+
+    <br><br>
+    <h3>Change Text Color</h3>
+    <select id="colorSelected">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="white">white</option>
+        <option value="black">black</option>
+    </select>
+    <button onclick="changeColor()">Change Color</button>
+    <p id="text">This is the the text to be changed colour</p>
+
+
+    <br><br>
+    <form id="form1">
+        First name: <input type="text" name="fname" value="david"><br>
+        Last name: <input type="text" name="lname" value="Bekham"><br>
+        
+        <button type="button" onclick="getNames()">Submit</button>
+    </form>
+    <p id="FullName"></p>
+    <br><br>
+    <h1>Click the button to see a random image</h1>
+    <button onclick="displayRandomImage()">Show Random Image</button>
+
+    <br><br>
+
+    
+    <img id="randomImage" src="" alt="Random Image" />
+   
+</body>
+</html>
